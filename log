@@ -1,0 +1,33 @@
+Thu Oct 15 02:07:54 UTC 2020: 
+ sudoku.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:53:11: error: expected identifier or ‘(’ before ‘,’ token
+     int i,,j,k;
+           ^
+sudoku.c:55:11: error: ‘j’ undeclared (first use in this function)
+       for(j=0; j<9 ;j++){
+           ^
+sudoku.c:55:11: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:57:15: error: ‘k’ undeclared (first use in this function)
+           for(k=1; k<=9 ;k++){
+               ^
+sudoku.c:59:22: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+             pushBack(lista,nuevo);
+                      ^~~~~
+                      list
+sudoku.c:61:11: error: statement with no effect [-Werror=unused-value]
+           n->sudo[i]j[]=0;
+           ^
+sudoku.c:61:21: error: expected ‘;’ before ‘j’
+           n->sudo[i]j[]=0;
+                     ^
+cc1: all warnings being treated as errors
+Compilation failed
+Thu Oct 15 02:08:40 UTC 2020: 
+ sudoku.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+ tests:  0|5
+total_score: 0/70
+71afe1a
