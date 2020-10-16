@@ -79,10 +79,7 @@ int is_final(Node* n){
           return 0;
         }
         else{
-          if(is_valid(n) == 1){
-            continue;
-          }
-          else{
+          if(is_valid(n) == 0){
             return 0;
           }
         }
