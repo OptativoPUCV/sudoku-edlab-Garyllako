@@ -85,6 +85,9 @@ int is_final(Node* n){
             }
           }
         }
+        else{
+          return 0;
+        }
       }
     }
     return 1;
