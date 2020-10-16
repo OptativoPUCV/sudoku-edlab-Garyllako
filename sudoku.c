@@ -50,9 +50,6 @@ int is_valid(Node* n){
       if(n->sudo[i][j] != 0){
         arreglo[i][j] = 1;
       }
-      else{
-        return 0;
-      }
       printf("%d",arreglo[i][j]);
     }
     printf("\n");
