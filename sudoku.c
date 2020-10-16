@@ -93,8 +93,8 @@ Node* DFS(Node* initial, int* cont){
       return node;
     }
     List * lista = createList();
-    Node* nod = first(lista);
     lista = get_adj_nodes(node);
+    Node* nod = first(lista);
     while(nod != NULL){
       push(S,nod);
       nod = next(lista);
