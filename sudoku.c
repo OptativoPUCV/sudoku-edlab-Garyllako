@@ -71,7 +71,6 @@ List* get_adj_nodes(Node* n){
 
 
 int is_final(Node* n){
-  
     int i,j;
     for(i=0; i<9 ;i++){
       for(j=0; j<9 ;j++){
@@ -89,6 +88,9 @@ Node* DFS(Node* initial, int* cont){
   while(S != NULL){
     Node * node = top(S);
     pop(S);
+    if(top(S) == NULL){
+      break;
+    }
     if(is_final(node) == 1){
       return node;
     }
