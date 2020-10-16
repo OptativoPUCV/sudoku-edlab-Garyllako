@@ -89,7 +89,7 @@ Node* DFS(Node* initial, int* cont){
     cont++;
     Node * node = top(S);
     pop(S);
-    if(is_final(node) == 1){
+    if(is_final(node)){
       return node;
     }
     List * lista = createList();
