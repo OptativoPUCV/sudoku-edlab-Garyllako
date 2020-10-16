@@ -43,17 +43,17 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-  int arreglo[10][10] = {};
+  int arreglo[10] = {};
   int i,j;
   for(i=0; i<9 ;i++){
     for(j=0; j<9 ;j++){
       if(n->sudo[i][j] != 0){
-        arreglo[i][j] = 1;
+        arreglo[i] = 1;
       }
       else{
         return 0;
       }
-      printf("%d",arreglo[i][j]);
+      printf("%d",arreglo[i]);
     }
     printf("\n");
   }
