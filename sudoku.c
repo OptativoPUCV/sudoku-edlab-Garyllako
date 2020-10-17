@@ -50,7 +50,7 @@ int is_valid(Node* n){
       }
       printf("\n");
     }
-
+    printf("\n");
 
 
    return 1;
