@@ -72,8 +72,6 @@ int is_valid(Node* n){
       for(p=0; p<9 ;p++){
         int i=3*(f/3) + (p/3);
         int j=3*(f%3) + (p%3);
-        printf("%d ",n->sudo[i][j]);
-        if(p%3 == 2) printf("\n");
         if(n->sudo[i][j] != 0){
           int t=4,g;
           for(t=0; t<9 ;t++){
@@ -82,6 +80,8 @@ int is_valid(Node* n){
               z = 3*(t%3) + (g%3);
               if(arreglo[k][z] == n->sudo[i][j]){
                 if((k != i) && (z != j)){
+                  printf("%d ",arreglo[i][j]);
+                  if(p%3 == 2) printf("\n");
                   return 0;
                 }
               }
