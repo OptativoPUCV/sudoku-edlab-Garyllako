@@ -124,7 +124,6 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
-  /*
   Stack * S = createStack();
   push(S, initial);
   while(is_empty(S) != 1){
@@ -143,7 +142,7 @@ Node* DFS(Node* initial, int* cont){
     }
     free(node);
     free(nod);
-  }*/
+  }
   return NULL;
 }
 
