@@ -80,8 +80,10 @@ int is_valid(Node* n){
             for(g=0; g<9 ;g++){
               k = 3*(t/3) + (g/3);
               z = 3*(t%3) + (g%3);
-              if((arreglo[k][z] == n->sudo[i][j]) && ((k != i) && (z != j))){
-                return 0;
+              if(arreglo[k][z] == n->sudo[i][j]){
+                if((k != i) && (z != j)){
+                  return 0;
+                }
               }
             }
           }
