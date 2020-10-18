@@ -80,7 +80,7 @@ int is_valid(Node* n){
               z = 3*(t%3) + (g%3);
               if(arreglo[k][z] == n->sudo[i][j]){
                 if((k != i) && (z != j)){
-                  printf("%d ",arreglo[i][j]);
+                  printf("%d ",arreglo[k][z]);
                   printf("%d ",n->sudo[i][j]);
                   if(p%3 == 2) printf("\n");
                   return 0;
