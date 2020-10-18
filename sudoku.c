@@ -66,8 +66,7 @@ int is_valid(Node* n){
         }
       }
     }
-    // Validación de 3x3
-    int f,p; 
+    int f,p; // Validación de 3x3 
     for(f=0; f<9 ;f++){
       for(p=0; p<9 ;p++){
         int i=3*(f/3) + (p/3);
@@ -79,9 +78,6 @@ int is_valid(Node* n){
             z = 3*(t%3) + (g%3);
             if(arreglo[k][z] == n->sudo[i][j]){
               if((k != i) && (z != j)){
-                printf("%d %d ",k,z);
-                printf("%d %d ",i,j);
-                if(p%3 == 2) printf("\n");
                 return 0;
               }
             }
