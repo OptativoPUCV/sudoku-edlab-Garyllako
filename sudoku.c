@@ -53,18 +53,26 @@ int is_valid(Node* n){
     for(i=0; i<9 ;i++){
       for(j=0; j<9 ;j++){
         if(n->sudo[i][j] != 0){
-          for(k=0; k<9 ;k++){
+          for(k=0; k<9 ;k++){ // Validación de columnas
             if((arreglo[k][j] == n->sudo[i][j]) && (k != i)){
               return 0;
             }
           }
-          for(z=0; z<9 ;z++){
+          for(z=0; z<9 ;z++){ // validación de filas
             if((arreglo[i][z] == n->sudo[i][j]) && (z != j)){
               return 0;
             }
           }
         }
       }
+    }
+    // Validación de 3x3
+    int f=4,p; 
+    for(p=0;p<9;p++){
+      int i=3*(f/3) + (p/3) ;
+      int j=3*(f%3) + (p%3) ;
+      printf("%d ",n->sudo[i][j]);
+      if(p%3 == 2) printf("\n");
     }
    return 1;
 }
