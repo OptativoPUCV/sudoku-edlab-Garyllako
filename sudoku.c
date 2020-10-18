@@ -81,6 +81,7 @@ int is_valid(Node* n){
               if(arreglo[k][z] == n->sudo[i][j]){
                 if((k != i) && (z != j)){
                   printf("%d ",arreglo[i][j]);
+                  printf("%d ",n->sudo[i][j]);
                   if(p%3 == 2) printf("\n");
                   return 0;
                 }
